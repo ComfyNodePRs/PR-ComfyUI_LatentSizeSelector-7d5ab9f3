@@ -1,0 +1,14 @@
+[project]
+name = "ComfyUI-latentSizeSelector"
+description = "You'll get a new node Latent Size Selector, you can pick the x and y sizes from a list."
+version = "0.0.1"
+license = "LICENSE"
+
+[project.urls]
+Repository = "https://github.com/1038lab/ComfyUI_LatentSizeSelector"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = "AILab"
+DisplayName = "ComfyUI-latentSizeSelector"
+Icon = ""
