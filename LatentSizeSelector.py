@@ -39,14 +39,14 @@ class LatentSizeSelector:
         if manual_width > 0 and manual_height > 0:
             width = manual_width * multiply_factor
             height = manual_height * multiply_factor
-            latent = torch.ones([batch_size, 16, height // 8, width // 8], device='cpu') * 0.0609  # 假设 batch_size = 1
+            latent = torch.ones([batch_size, 16, height // 8, width // 8], device='cpu') * 0.0609  # batch_size = 1
             return {"width": width}, {"height": height}, {"samples": latent}
         else:
             # Extract resolution name and dimensions using the key
             selected_info = self.size_dict[size_selected]
             width = selected_info["width"] * multiply_factor
             height = selected_info["height"] * multiply_factor
-            latent = torch.ones([batch_size, 16, height // 8, width // 8], device='cpu') * 0.0609  # 假设 batch_size = 1
+            latent = torch.ones([batch_size, 16, height // 8, width // 8], device='cpu') * 0.0609  # batch_size = 1
             return {"width": width}, {"height": height}, {"samples": latent}
 
     @staticmethod
