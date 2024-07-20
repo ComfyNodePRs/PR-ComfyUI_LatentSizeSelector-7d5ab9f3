@@ -30,7 +30,7 @@ class LatentSizeSelector:
     RETURN_NAMES = ("width", "height", "samples")
     FUNCTION = "return_res"
     OUTPUT_NODE = True
-    CATEGORY = "AILab 🧪"
+    CATEGORY = "🧪 AILab"
 
     def return_res(self, size_selected, multiply_factor, manual_width, manual_height,batch_size):
         print(f"size_selected: {size_selected}, multiply_factor: {multiply_factor}, manual_width: {manual_width}, manual_height: {manual_height}")
